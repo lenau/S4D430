@@ -68,6 +68,21 @@ define table z25appindex {
   ENDMETHOD.
 ```
 
+## Misc
+```
+@Search.searchable: true
+define root view entity ZC_25APPINDEX
+...
+@Search.defaultSearchElement: true
+@Search.fuzzinessThreshold: 0.8
+
+
+define behavior for ZC_25APPINDEX alias AppIndex
+...
+  use action refreshAppIndex;
+
+```
+
 ## Metadata Extension
 ```
 @Metadata.layer: #CORE
