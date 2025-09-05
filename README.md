@@ -68,3 +68,83 @@ define table z25appindex {
   ENDMETHOD.
 ```
 
+## Metadata Extension
+```
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'App Index',
+    typeNamePlural: 'App Indices'
+  }
+}
+annotate view ZC_25APPINDEX with
+{
+  @UI.facet: [ {
+    id: 'idIdentification',
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'App Index',
+    position: 10
+  } ]
+  @UI.hidden: true
+  UUID;
+
+  @EndUserText.label: 'SAP UI5 Component ID'
+  @UI.lineItem: [ {
+    position: 10 ,
+    importance: #MEDIUM,
+    label: 'SAP UI5 Component ID'
+  },
+  { type: #FOR_ACTION,
+    dataAction: 'refreshAppIndex',
+    label: 'Refresh App Index'
+  } ]
+  @UI.identification: [ {
+    position: 10 ,
+    label: 'SAP UI5 Component ID'
+  } ]
+  @UI.selectionField: [{position: 10}]
+  ID;
+
+  @EndUserText.label: 'Title'
+  @UI.lineItem: [ {
+    position: 20 ,
+    importance: #MEDIUM,
+    label: 'Title'
+  } ]
+  @UI.identification: [ {
+    position: 20 ,
+    label: 'Title'
+  } ]
+  @UI.selectionField: [{position: 20}]
+  Title;
+
+  @EndUserText.label: 'SICF URL'
+  @UI.lineItem: [ {
+    position: 30 ,
+    importance: #MEDIUM,
+    label: 'SICF URL'
+  } ]
+  @UI.identification: [ {
+    position: 30 ,
+    label: 'SICF URL'
+  } ]
+  @UI.selectionField: [{position: 30}]
+  Url;
+
+  @EndUserText.label: 'BSP App'
+  @UI.lineItem: [ {
+    position: 40 ,
+    importance: #MEDIUM,
+    label: 'BSP App'
+  } ]
+  @UI.identification: [ {
+    position: 40 ,
+    label: 'BSP App'
+  } ]
+  @UI.selectionField: [{position: 40}]
+  RepoName;
+
+  @UI.hidden: true
+  LocalLastChanged;
+}
+```
