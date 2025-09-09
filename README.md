@@ -1,7 +1,7 @@
 # S4D430
 
-Transaction: *SUI_SUPPORT*  
-Report: */UI5/APP_INDEX_CALCULATE*  
+Transaction: **SUI_SUPPORT**  
+Report: **/UI5/APP_INDEX_CALCULATE**  
 
 ## Table App Index
 ```
